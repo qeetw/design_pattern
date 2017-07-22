@@ -1,4 +1,4 @@
-from abc import ABCMeta, abstractclassmethod
+from abc import ABCMeta, abstractmethod
 
 class Beverage(metaclass=ABCMeta):
     description = 'Unknown Beverage'
@@ -6,6 +6,6 @@ class Beverage(metaclass=ABCMeta):
     def get_description(self):
         return self.description
 
-    @abstractclassmethod
+    @abstractmethod
     def cost(self):
         pass

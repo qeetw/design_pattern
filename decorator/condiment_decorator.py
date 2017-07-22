@@ -1,7 +1,7 @@
-from abc import ABCMeta, abstractclassmethod
+from abc import ABCMeta, abstractmethod
 from beverage import Beverage
 
 class CondimentDecorator(Beverage, metaclass=ABCMeta):
-    @abstractclassmethod
+    @abstractmethod
     def get_description(self):
         pass
